@@ -90,6 +90,7 @@ span{
     }
     .header__burger.active span{
         transform: scale(0);
+         color: #828282;
     }
     .header__burger span{
         position: absolute;
