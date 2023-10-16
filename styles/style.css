@@ -154,8 +154,19 @@ span {
     gap: 20px;
   }
 }
+.main__wrapper {
+  display: flex;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .main__btn {
   border-radius: 30px;
+  max-width: 150px;
 }
 
 .main__info {
@@ -183,7 +194,7 @@ span {
 
 .main-input {
   padding: 0 0 0 40px;
-  width: 520px;
+  width: 597px;
   height: 62px;
   border: none;
   border-radius: 50px;
@@ -193,4 +204,10 @@ span {
   margin: 0 0 0 -60px;
   padding: 15px;
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .main__wrapper {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

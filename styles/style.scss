@@ -149,11 +149,14 @@ span{
 
 .main {
 }
-.container {
-}
+
 .main__wrapper {
+    display: flex;  
 }
 .main__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .main__title {
 }
@@ -165,6 +168,7 @@ span{
 }
 .main__btn {
     border-radius: 30px;
+    max-width: 150px;
 }
 .search-btn {
 }
@@ -191,7 +195,7 @@ span{
 }
 .main-input{
     padding: 0 0 0 40px;
-    width: 520px;
+    width: 597px;
     height: 62px;
     border: none;
     border-radius: 50px;
@@ -203,4 +207,9 @@ span{
     // height: 55px;
     border-radius: 50%;
 
+}
+@media (max-width:767px) {
+    .main__wrapper{
+        flex-direction: column;
+    }
 }
