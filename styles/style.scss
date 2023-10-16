@@ -11,6 +11,12 @@ span{
 .title{
     font-size: clamp(22px, 6vw, 48px);
 }
+.text{
+    color: #7C7C7C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
 .wrappper {
     min-height: 100%;
     overflow: hidden;
@@ -148,40 +154,35 @@ span{
 
 
 .main {
+    margin: 120px 0 0;
 }
 
 .main__wrapper {
     display: flex;  
+
 }
 .main__right {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.main__title {
-}
-.title {
-}
 .main__text {
-}
-.text {
+    width: min(100%, 444px);
 }
 .main__btn {
     border-radius: 30px;
     max-width: 150px;
 }
-.search-btn {
-}
 .main__info {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 .main__images {
     display: flex;
+
 }
 .plus{
-    // background-image: url(/img/plus.svg);
     margin: 0 0 0 -28px;
 }
 .main__link {
@@ -194,8 +195,8 @@ span{
     align-items: center;
 }
 .main-input{
-    padding: 0 0 0 40px;
-    width: 597px;
+    padding: 0 0px 0 40px;
+    width: min(100%, 600px);
     height: 62px;
     border: none;
     border-radius: 50px;
@@ -203,12 +204,36 @@ span{
 .search-btn{
     margin: 0 0 0 -60px;
     padding: 15px;
-    // width: 55px;
-    // height: 55px;
     border-radius: 50%;
 
 }
+.main__left {
+}
+.main-image {
+    background: url(/img/green\ circle.svg) no-repeat top;
+    margin: 200px 0 0 0;
+    z-index: 10;
+    position: relative;
+}
+
+
+.icon-contry {
+}
+.icon-1 {
+    position: absolute;
+    margin: -50px 0 0 -50px;
+}
+.icon-2 {
+    position: relative;
+}
+.icon-3 {
+    position: relative;
+}
+
 @media (max-width:767px) {
+    .main{
+        margin: 50px 0 0 0;
+    }
     .main__wrapper{
         flex-direction: column;
     }
