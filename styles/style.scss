@@ -208,27 +208,86 @@ span{
 
 }
 .main__left {
+    position: relative;
 }
 .main-image {
     background: url(/img/green\ circle.svg) no-repeat top;
     margin: 200px 0 0 0;
     z-index: 10;
-    position: relative;
+    // position: relative;
 }
 
 
 .icon-contry {
+    // margin: -260px 0 0 250px;
+    right: 40%;
+    top: 55%;
+    // z-index: 500;
+    z-index: -10;
 }
 .icon-1 {
     position: absolute;
-    margin: -50px 0 0 -50px;
+    animation-name: icon-1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
 }
 .icon-2 {
-    position: relative;
+    position: absolute;
+    animation-name: icon-2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
 }
 .icon-3 {
-    position: relative;
+    position: absolute;
+    animation-name: icon-3;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes icon-1{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 80%;
+        top: 40%;
+    }
+}
+@keyframes icon-2{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 40%;
+        top: 10%;
+    }
+}
+@keyframes icon-3{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 0%;
+        top: 40%;
+    }
+}
+
 
 @media (max-width:767px) {
     .main{
