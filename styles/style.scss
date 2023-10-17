@@ -210,51 +210,60 @@ span{
 .main__left {
     position: relative;
 }
+
 .main-image {
     background: url(/img/green\ circle.svg) no-repeat top;
-    margin: 200px 0 0 0;
+    margin: 200px 0px 0 0px;
+    // padding: 0 30px 0 30px;
     z-index: 10;
-    // position: relative;
+    // position: absolute;
+}
+.green-circle{
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    z-index: -2;
 }
 
 
 .icon-contry {
-    // margin: -260px 0 0 250px;
     right: 40%;
     top: 55%;
-    // z-index: 500;
-    z-index: -10;
+    position: absolute;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    // z-index: -10;
 }
 .icon-1 {
-    position: absolute;
     animation-name: icon-1;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
     animation-delay: 3s;
-    animation-fill-mode: forwards;
-
 }
 .icon-2 {
-    position: absolute;
     animation-name: icon-2;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
     animation-delay: 3.4s;
-    animation-fill-mode: forwards;
 }
 .icon-3 {
-    position: absolute;
     animation-name: icon-3;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
     animation-delay: 3.8s;
-    animation-fill-mode: forwards;
+}
+.icon-4 {
+    animation-name: icon-4;
+    animation-delay: 4.2s;
+}
+.icon-5 {
+    animation-name: icon-5;
+    animation-delay: 4.6s;
+}
+.icon-6 {
+    animation-name: icon-6;
+    animation-delay: 5s;
+}
+.icon-7 {
+    animation-name: icon-7;
+    animation-delay: 5.4s;
 }
 
 @keyframes icon-1{
@@ -263,8 +272,8 @@ span{
         top: 55%;
     }
     100%{
-        right: 80%;
-        top: 40%;
+        right: 70%;
+        top: 20%;
     }
 }
 @keyframes icon-2{
@@ -287,9 +296,61 @@ span{
         top: 40%;
     }
 }
+@keyframes icon-4{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 10%;
+        top: 80%;
+    }
+}
+@keyframes icon-5{
+    0%{
+        right: 40%;
+        top: 60%;
+    }
+    100%{
+        right: 40%;
+        top: 90%;
+    }
+}
+@keyframes icon-6{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 80%;
+        top: 70%;
+    }
+}
+@keyframes icon-7{
+    0%{
+        right: 40%;
+        top: 55%;
+    }
+    100%{
+        right: 85%;
+        top: 45%;
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0turn)
+                   translateY(-50px) translateX(50%)
+                   rotate(1turn)
+    }
+    100%{
+        transform: rotate(1turn)
+                   translateY(-50px) translateX(50%)
+                   rotate(0turn)
+    }
+}
 
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .main{
         margin: 50px 0 0 0;
     }
