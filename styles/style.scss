@@ -9,7 +9,7 @@ span{
     color: $second-text;
 }
 .title{
-    font-size: clamp(22px, 6vw, 48px);
+    font-size: clamp(28px, 6vw, 48px);
 }
 .text{
     color: #7C7C7C;
@@ -151,14 +151,15 @@ span{
         gap: 20px;
     }
 }
-
+_____________
 
 .main {
-    margin: 120px 0 0 0;
+
 }
 
 .main__wrapper {
     display: flex;  
+    margin: 120px 0 0 0;
 
 }
 .main__right {
@@ -182,11 +183,33 @@ span{
     display: flex;
 
 }
+.img2{
+    z-index: -1;
+    margin-left: -15px;
+}
+.img3{
+    z-index: -2;
+    margin-left: -15px;
+}
+.img4{
+    z-index: -3;
+    margin-left: -15px;
+}
+.img5{
+    z-index: -3;
+    margin-left: -28px;
+}
 .plus{
     margin: 0 0 0 -28px;
 }
 .main__link {
     color: $second-text;
+}
+@media (max-width:424px) {
+    .main__info{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 
@@ -245,6 +268,7 @@ span{
     animation-direction: normal;
     animation-fill-mode: forwards;
     z-index: -10;
+
 }
 .icon-1 {
     animation-name: icon-1;
@@ -360,15 +384,10 @@ span{
 
 
 @media (max-width:768px) {
-    .main{
-        margin: 50px 0 0 0;
-    }
     .main__wrapper{
         flex-direction: column;
+        margin: 50px 0 0 0;
     }
-    // .main__right{
-    //     margin: 0 0 60px 0;
-    // }
     .icon-contry{
         width: 70px;
     }
