@@ -253,6 +253,7 @@ span {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  z-index: -10;
 }
 
 .icon-1 {
