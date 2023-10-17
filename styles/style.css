@@ -162,7 +162,7 @@ span {
   }
 }
 .main {
-  margin: 120px 0 0;
+  margin: 120px 0 0 0;
 }
 
 .main__wrapper {
@@ -223,11 +223,16 @@ span {
 
 .main__left {
   position: relative;
+  margin: 0 auto;
+  max-width: 480px;
+  max-height: 480px;
 }
 
 .main-image {
   background: url(/img/green\ circle.svg) no-repeat top;
-  margin: 200px 0px 0 0px;
+  background-size: 200px;
+  background-position: 50% 25%;
+  margin: 110px 0px 0 0px;
   z-index: 10;
 }
 
@@ -239,6 +244,7 @@ span {
 }
 
 .icon-contry {
+  width: 100px;
   right: 40%;
   top: 55%;
   position: absolute;
@@ -290,8 +296,8 @@ span {
     top: 55%;
   }
   100% {
-    right: 70%;
-    top: 20%;
+    right: 65%;
+    top: 15%;
   }
 }
 @keyframes icon-2 {
@@ -300,7 +306,7 @@ span {
     top: 55%;
   }
   100% {
-    right: 40%;
+    right: 25%;
     top: 10%;
   }
 }
@@ -321,7 +327,7 @@ span {
   }
   100% {
     right: 10%;
-    top: 80%;
+    top: 75%;
   }
 }
 @keyframes icon-5 {
@@ -331,7 +337,7 @@ span {
   }
   100% {
     right: 40%;
-    top: 90%;
+    top: 85%;
   }
 }
 @keyframes icon-6 {
@@ -368,5 +374,8 @@ span {
   }
   .main__wrapper {
     flex-direction: column;
+  }
+  .icon-contry {
+    width: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
